@@ -1,20 +1,20 @@
-# Beispielkarten für HARKI
+# Example cards for HARKI
 
-Hier ein paar Vorschläge, um die ARE/ILI-Inzidenzen aus der HARKI-Integration darzustellen.
+Here are a few suggestions for displaying ARE/ILI incidences from the HARKI integration.
 
-Ersetze `<name>` durch den Namen, den du bei der Integration gewählt hast (z. B. aus `sensor.<name>_are`).
+Replace `<name>` with the name you chose during setup (e.g. from `sensor.<name>_are`).
 
-## Benötigte Custom Cards (optional)
+## Required custom cards (optional)
 
-- [ApexCharts Card](https://github.com/RomRider/apexcharts-card) – für Verlauf/Trend
-- [Mushroom](https://github.com/piitaya/lovelace-mushroom) – kompakt & modern
-- [mini-graph-card](https://github.com/kalkih/mini-graph-card) – schlanker Verlauf
+- [ApexCharts Card](https://github.com/RomRider/apexcharts-card) – for trends/charts
+- [Mushroom](https://github.com/piitaya/lovelace-mushroom) – compact & modern
+- [mini-graph-card](https://github.com/kalkih/mini-graph-card) – slim trend view
 
-## Dateien
+## Files
 
-| Datei | Beschreibung |
+| File | Description |
 |---|---|
-| `entities-card.yaml` | Einfache Entities-Karte mit aktuellen Werten und Attributen |
-| `apexcharts-card.yaml` | ApexCharts mit ARE und ILI für den aktuellen Stand (basiert auf Attributen) |
-| `mushroom-cards.yaml` | Kompakte Mushroom-Chips/Entities für Dashboard |
-| `markdown-card.yaml` | Kurzübersicht für Header/Info-Karten |
+| `entities-card.yaml` | Simple entities card with current values and attributes |
+| `apexcharts-card.yaml` | ApexCharts showing ARE and ILI for the current week (based on attributes) |
+| `mushroom-cards.yaml` | Compact Mushroom chips/entities for your dashboard |
+| `markdown-card.yaml` | Short overview for header/info cards |
