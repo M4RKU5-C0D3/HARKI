@@ -1,0 +1,19 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Home Assistant RKI",
+        "description": "RKI GrippeWeb Daten zu ARE und ILI. Verfügbar sind Bundesweit sowie die Großregionen Süden, Mitte (West), Norden (West), Osten.",
+        "data": {
+          "name": "Name",
+          "age_group": "Altersgruppe",
+          "region": "Region / Großregion"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Keine Daten vom Server erhalten",
+      "no_data": "Keine Daten für diese Auswahl gefunden"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+type: entities
+title: RKI GrippeWeb
+show_header_toggle: false
+entities:
+  - entity: sensor.<name>_are
+    name: ARE (akute Atemwegserkrankungen)
+    secondary_info: attribute
+    attribute: kalenderwoche
+  - entity: sensor.<name>_ili
+    name: ILI (grippeähnliche Erkrankungen)
+    secondary_info: attribute
+    attribute: kalenderwoche
+  - type: attribute
+    entity: sensor.<name>_are
+    attribute: saison
+    name: Saison
+  - type: attribute
+    entity: sensor.<name>_are
+    attribute: region
+    name: Region/Bundesland
+  - type: attribute
+    entity: sensor.<name>_are
+    attribute: altersgruppe
+    name: Altersgruppe
+  - type: attribute
+    entity: sensor.<name>_are
+    attribute: meldungen
+    name: Meldungen (Basis)

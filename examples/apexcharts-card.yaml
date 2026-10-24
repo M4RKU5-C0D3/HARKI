@@ -1,0 +1,31 @@
+type: custom:apexcharts-card
+header:
+  show: true
+  title: RKI GrippeWeb – ARE & ILI
+  show_states: true
+  colorize_states: true
+graph_span: 1d
+span:
+  start: day
+update_interval: 1h
+yaxis:
+  - min: 0
+    decimals: 0
+    apex_config:
+      tickAmount: 5
+series:
+  - entity: sensor.<name>_are
+    name: ARE
+    type: column
+    color: '#ff6b6b'
+    float_precision: 0
+  - entity: sensor.<name>_ili
+    name: ILI
+    type: column
+    color: '#4dabf7'
+    float_precision: 0
+card_mod:
+  style: |
+    ha-card {
+      --apex-border-color: var(--divider-color);
+    }

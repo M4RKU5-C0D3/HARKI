@@ -1,0 +1,12 @@
+type: markdown
+title: RKI GrippeWeb – Übersicht
+content: |
+  **Woche:** {{ state_attr('sensor.<name>_are', 'kalenderwoche') }} | **Saison:** {{ state_attr('sensor.<name>_are', 'saison') }}
+
+  **Region/Bundesland:** {{ state_attr('sensor.<name>_are', 'region') }}  
+  **Altersgruppe:** {{ state_attr('sensor.<name>_are', 'altersgruppe') }}
+
+  **ARE:** {{ states('sensor.<name>_are') }} pro 100.000 EW  
+  **ILI:** {{ states('sensor.<name>_ili') }} pro 100.000 EW
+
+  _Quelle: Robert Koch-Institut – GrippeWeb Wochenbericht_

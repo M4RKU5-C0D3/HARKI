@@ -1,0 +1,32 @@
+type: horizontal-stack
+cards:
+  - type: custom:mushroom-entity-card
+    entity: sensor.<name>_are
+    name: ARE
+    icon: mdi:lungs
+    icon_color: red
+    primary_info: state
+    secondary_info: last-updated
+  - type: custom:mushroom-entity-card
+    entity: sensor.<name>_ili
+    name: ILI
+    icon: mdi:thermometer
+    icon_color: blue
+    primary_info: state
+    secondary_info: last-updated
+
+type: vertical-stack
+cards:
+  - type: custom:mushroom-title-card
+    title: RKI GrippeWeb
+    subtitle: "{{ state_attr('sensor.<name>_are', 'region') }} • KW {{ state_attr('sensor.<name>_are', 'kalenderwoche') }} • {{ state_attr('sensor.<name>_are', 'saison') }}"
+  - type: horizontal-stack
+    cards:
+      - type: custom:mushroom-entity-card
+        entity: sensor.<name>_are
+        name: Akute Atemwegserkrankungen
+        icon_color: red
+      - type: custom:mushroom-entity-card
+        entity: sensor.<name>_ili
+        name: Grippeähnliche Erkrankung
+        icon_color: blue
